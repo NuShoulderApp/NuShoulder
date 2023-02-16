@@ -210,9 +210,9 @@ export default class LoginClass extends React.Component {
                 <div className="mt-2">
                     <button type="button" className={`btn btn-sm text-white`} style={{backgroundColor: '#e05900'}} onClick={() => this.handleCreateAccount('Coach')}>COACH</button>
                 </div>
-                <div className="mt-2">
+                {/* <div className="mt-2">
                     <button type="button" className={`btn btn-sm text-white`} style={{backgroundColor: '#e05900'}} onClick={() => this.handleCreateAccount('Regular')}>REGULAR ACCOUNT</button>
-                </div>
+                </div> */}
             </div>
         )
     }

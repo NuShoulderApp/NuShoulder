@@ -6,6 +6,7 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import { Link } from "react-router-dom";
 // import IWDBreadcrumb from '../utilities/IWDBreadcrumb';
 
+import { HomeComponent } from "../home/home_component.js";
 import LoginComponent from "../auth/login_componentNS.js";
 
 import { AdminNuHouseScoreComponent } from "../nuhouse_score/admin_nuhouse_score_component.js";
@@ -55,6 +56,7 @@ function PublicRoutes(Account) {
 		{/* <Route path="/login" render={withBreadcrumb(LoginRoutes,"Login")} /> */}
 		<Route path="/login" element={<LoginComponent />} />
 		<Route path="/admin_nuhouse_score" element={<AdminNuHouseScoreComponent />} />
+		<Route path="/home" element={<HomeComponent />} />
 
 
 		{/* Info pages - restrict to pet above */}
@@ -81,6 +83,7 @@ function PublicRoutes(Account) {
 // Admin / Crematory / Vet Facing Pages - need to login
 function AppRoutes() {
 	return <Routes>
+		<Route path="/home" element={<HomeComponent />} />
 		{/* <Route exact path="/" component={Dashboard} /> */}
 		{/* <Route path="/login" component={Dashboard} />	Afer logging in show the dashboard for that user */}
 		{/* <Route path="/account" render={withBreadcrumb(AccountRoutes,"Accounts", "accounts")} />
